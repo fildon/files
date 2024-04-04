@@ -4,14 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Files</title>
+    <style>
+      body {
+        margin: 0;
+        line-height: 1.5;
+        font-family: system-ui, Helvetica, Arial, sans-serif;
+      }
+      /* Composition */
+      main {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-inline: auto;
+        max-inline-size: min(60ch, 90vw);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      main > * {
+        max-width: 100%;
+      }
+      main > * + * {
+        margin-block-start: 1rem;
+      }
+      video {
+        max-width: 100%;
+      }
+    </style>
   </head>
   <body>
-    <h1>Files</h1>
-    <h2>How to send the prescreen applicants</h2>
-    <video controls preload="metadata">
-      <source
-        src="https://media.githubusercontent.com/media/fildon/files/main/codesignal.mov"
-      />
-    </video>
+    <main>
+      <h1>Files</h1>
+      <h2>How to send the prescreen to applicants</h2>
+      <video controls preload="metadata">
+        <source src="https://github.com/fildon/files/raw/main/codesignal.mov" />
+      </video>
+    </main>
   </body>
 </html>
